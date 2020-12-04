@@ -1,0 +1,22 @@
+{
+  "name": "prueba-needzaio",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en consumir un servicio tanto de consulta como de un login.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "env-cmd": "^10.1.0",
+    "graphql-tag": "^2.11.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "api": "env-cmd -f .env node ./src/server.js",
+    "api-dev": "env-cmd -f .env nodemon ./src/server.js"
+  }
+}
